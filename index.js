@@ -3,10 +3,11 @@ const AdmZip = require("adm-zip");
 const fs = require("fs-extra");
 const path = require("path");
 
+const PROJECT_NAME = "karirlab-frontend";
 const EXCLUDED_NAMESPACE = "glossary";
 const LOCALES_PATH = path.join(__dirname, "public", "locales");
-const WEBLATE_EXTRACT_PATH = path.join(LOCALES_PATH, "karirlab-frontend");
-const DOWNLOAD_URL = "http://localhost/download/karirlab-frontend";
+const WEBLATE_EXTRACT_PATH = path.join(LOCALES_PATH, PROJECT_NAME);
+const DOWNLOAD_URL = `http://localhost/download/${PROJECT_NAME}`;
 
 async function downloadAndExtractZip(url, outputPath) {
   try {
