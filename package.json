@@ -1,0 +1,16 @@
+{
+  "name": "nodejs-weblate-i18next-downloader",
+  "version": "1.0.0",
+  "description": "Node.js script to download translation files from weblate and restructure it to support i18next folder structure",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "adm-zip": "^0.5.10",
+    "axios": "^1.4.0"
+  }
+}
